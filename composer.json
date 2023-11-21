@@ -1,0 +1,31 @@
+{
+    "name": "Kaamrul/laravel-unique-slug",
+    "description": "A simple but beautiful unique slug generator for laravel eloquent model.",
+    "type": "composer-plugin",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Kaamrul\\UniqueSlug\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Md Kamrul Hasan",
+            "email": "mk.kamrulhasan@outlook.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.4"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kaamrul\\UniqueSlug\\UniqueSlugServiceProvider"
+            ],
+            "aliases": {
+                "UniqueSlug": "Kaamrul\\UniqueSlug\\UniqueSlug"
+            }
+        }
+    }
+}
